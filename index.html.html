@@ -1,0 +1,70 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PH Government Services Directory</title><style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#172033}header{background:#0038a8;color:#fff;padding:18px 6%;display:flex;justify-content:space-between}header a{color:#fff;text-decoration:none;margin-left:18px}.logo{font-weight:800}.hero{background:linear-gradient(135deg,#0038a8,#1264d9);color:white;text-align:center;padding:65px 20px}h1{font-size:clamp(34px,6vw,58px);margin:0 0 12px}.hero p{font-size:18px}.search{max-width:760px;margin:25px auto;display:flex;background:#fff;padding:7px;border-radius:14px}input{flex:1;border:0;padding:15px;font-size:16px;outline:0}.search button{background:#ce1126;color:#fff;border:0;border-radius:10px;padding:0 22px;font-weight:800}.container{max-width:1200px;margin:auto;padding:42px 20px}.categories{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0 30px}.cat{background:#fff;border:1px solid #d7deea;border-radius:30px;padding:10px 14px;cursor:pointer}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:15px}.card{display:flex;gap:14px;background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:19px;text-decoration:none;color:inherit;box-shadow:0 5px 15px #13264b0a;transition:.2s}.card:hover{transform:translateY(-3px)}.icon{font-size:30px}.card h3{margin:0 0 7px;font-size:17px}.card p{margin:0 0 10px;color:#667085;font-size:13px;line-height:1.5}.card span{color:#0038a8;font-weight:700;font-size:13px}.notice{margin-top:35px;padding:17px;background:#fff8e6;border:1px solid #eed487;border-radius:12px;font-size:13px}footer{background:#101827;color:#cbd5e1;text-align:center;padding:30px;font-size:13px}@media(max-width:650px){nav{display:none}.search button{padding:0 14px}}</style></head>
+<body><header><div class="logo">🇵🇭 PH Government Directory</div><nav><a href="#directory">Services</a><a href="#about">About</a></nav></header>
+<section class="hero"><h1>Philippine Government Services</h1><p>Find government agencies, clearances, IDs, benefits and online services in one place.</p><div class="search"><input id="search" oninput="searchCards()" placeholder="Search SSS, passport, NBI, police clearance, OFW…"><button>Search</button></div></section>
+<main class="container" id="directory"><h2>Government Services & Agencies</h2><div class="categories"><button class="cat" onclick="filterCat(0)">All Services</button><button class="cat" onclick="filterCat(1)">IDs & Civil Registry</button><button class="cat" onclick="filterCat(2)">Social Benefits</button><button class="cat" onclick="filterCat(3)">OFW & Overseas Work</button><button class="cat" onclick="filterCat(4)">Business & Taxes</button><button class="cat" onclick="filterCat(5)">Jobs & Education</button><button class="cat" onclick="filterCat(6)">Health</button><button class="cat" onclick="filterCat(7)">Clearances & Safety</button><button class="cat" onclick="filterCat(8)">Transportation</button><button class="cat" onclick="filterCat(9)">Other Government</button></div><div class="grid"><a class="card" href="https://www.gov.ph/" target="_blank" rel="noopener" data-search="GOV.PH National government portal">
+<div class="icon">🇵🇭</div><div><h3>GOV.PH</h3><p>National government portal</p><span>Open official website →</span></div></a>
+<a class="card" href="https://psa.gov.ph/" target="_blank" rel="noopener" data-search="Philippine Statistics Authority (PSA) Birth, marriage, death certificates and civil registration">
+<div class="icon">🪪</div><div><h3>Philippine Statistics Authority (PSA)</h3><p>Birth, marriage, death certificates and civil registration</p><span>Open official website →</span></div></a>
+<a class="card" href="https://appointment.psa.gov.ph/" target="_blank" rel="noopener" data-search="PSA Appointment PSA online appointment / civil registry services">
+<div class="icon">📅</div><div><h3>PSA Appointment</h3><p>PSA online appointment / civil registry services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://philsys.gov.ph/" target="_blank" rel="noopener" data-search="PhilSys / National ID Philippine Identification System information and services">
+<div class="icon">🆔</div><div><h3>PhilSys / National ID</h3><p>Philippine Identification System information and services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://www.sss.gov.ph/" target="_blank" rel="noopener" data-search="Social Security System (SSS) Membership, contributions, loans and benefits">
+<div class="icon">💰</div><div><h3>Social Security System (SSS)</h3><p>Membership, contributions, loans and benefits</p><span>Open official website →</span></div></a>
+<a class="card" href="https://www.philhealth.gov.ph/" target="_blank" rel="noopener" data-search="PhilHealth Membership, contributions, MDR and health benefits">
+<div class="icon">🏥</div><div><h3>PhilHealth</h3><p>Membership, contributions, MDR and health benefits</p><span>Open official website →</span></div></a>
+<a class="card" href="https://www.pagibigfund.gov.ph/" target="_blank" rel="noopener" data-search="Pag-IBIG Fund Membership, savings, loans and housing services">
+<div class="icon">🏠</div><div><h3>Pag-IBIG Fund</h3><p>Membership, savings, loans and housing services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://dfa.gov.ph/" target="_blank" rel="noopener" data-search="Department of Foreign Affairs (DFA) Passport, consular and foreign affairs services">
+<div class="icon">🌍</div><div><h3>Department of Foreign Affairs (DFA)</h3><p>Passport, consular and foreign affairs services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://passport.gov.ph/" target="_blank" rel="noopener" data-search="DFA Passport Appointment Official passport appointment portal">
+<div class="icon">🛂</div><div><h3>DFA Passport Appointment</h3><p>Official passport appointment portal</p><span>Open official website →</span></div></a>
+<a class="card" href="https://pnpclearance.ph/" target="_blank" rel="noopener" data-search="PNP Police Clearance Police clearance application and services">
+<div class="icon">👮</div><div><h3>PNP Police Clearance</h3><p>Police clearance application and services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://clearance.nbi.gov.ph/" target="_blank" rel="noopener" data-search="NBI Clearance NBI clearance online application and verification">
+<div class="icon">🔎</div><div><h3>NBI Clearance</h3><p>NBI clearance online application and verification</p><span>Open official website →</span></div></a>
+<a class="card" href="https://dmw.gov.ph/" target="_blank" rel="noopener" data-search="Department of Migrant Workers (DMW) OFW registration, overseas employment and migrant-worker services">
+<div class="icon">💼</div><div><h3>Department of Migrant Workers (DMW)</h3><p>OFW registration, overseas employment and migrant-worker services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://onlineservices.dmw.gov.ph/POEAOnline.aspx" target="_blank" rel="noopener" data-search="POEA Services / DMW Former POEA services now under DMW">
+<div class="icon">✈️</div><div><h3>POEA Services / DMW</h3><p>Former POEA services now under DMW</p><span>Open official website →</span></div></a>
+<a class="card" href="https://owwa.gov.ph/" target="_blank" rel="noopener" data-search="OWWA OFW welfare, assistance and programs">
+<div class="icon">🌏</div><div><h3>OWWA</h3><p>OFW welfare, assistance and programs</p><span>Open official website →</span></div></a>
+<a class="card" href="https://www.bir.gov.ph/" target="_blank" rel="noopener" data-search="Bureau of Internal Revenue (BIR) Tax registration, filing and taxpayer services">
+<div class="icon">🧾</div><div><h3>Bureau of Internal Revenue (BIR)</h3><p>Tax registration, filing and taxpayer services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://www.dti.gov.ph/" target="_blank" rel="noopener" data-search="Department of Trade and Industry (DTI) Business name registration and business services">
+<div class="icon">🏢</div><div><h3>Department of Trade and Industry (DTI)</h3><p>Business name registration and business services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://www.sec.gov.ph/" target="_blank" rel="noopener" data-search="Securities and Exchange Commission (SEC) Company registration and corporate services">
+<div class="icon">🏛️</div><div><h3>Securities and Exchange Commission (SEC)</h3><p>Company registration and corporate services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://dole.gov.ph/" target="_blank" rel="noopener" data-search="Department of Labor and Employment (DOLE) Labor, employment and worker assistance">
+<div class="icon">👷</div><div><h3>Department of Labor and Employment (DOLE)</h3><p>Labor, employment and worker assistance</p><span>Open official website →</span></div></a>
+<a class="card" href="https://www.prc.gov.ph/" target="_blank" rel="noopener" data-search="Professional Regulation Commission (PRC) Professional licensure and registration">
+<div class="icon">🎓</div><div><h3>Professional Regulation Commission (PRC)</h3><p>Professional licensure and registration</p><span>Open official website →</span></div></a>
+<a class="card" href="https://www.tesda.gov.ph/" target="_blank" rel="noopener" data-search="TESDA Technical-vocational education, training and certification">
+<div class="icon">🛠️</div><div><h3>TESDA</h3><p>Technical-vocational education, training and certification</p><span>Open official website →</span></div></a>
+<a class="card" href="https://doh.gov.ph/" target="_blank" rel="noopener" data-search="Department of Health (DOH) Public health information and services">
+<div class="icon">🏥</div><div><h3>Department of Health (DOH)</h3><p>Public health information and services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://pnp.gov.ph/" target="_blank" rel="noopener" data-search="Philippine National Police (PNP) Police, safety and public service information">
+<div class="icon">👮</div><div><h3>Philippine National Police (PNP)</h3><p>Police, safety and public service information</p><span>Open official website →</span></div></a>
+<a class="card" href="https://lto.gov.ph/" target="_blank" rel="noopener" data-search="Land Transportation Office (LTO) Driver's license and vehicle registration services">
+<div class="icon">🚗</div><div><h3>Land Transportation Office (LTO)</h3><p>Driver's license and vehicle registration services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://ltfrb.gov.ph/" target="_blank" rel="noopener" data-search="LTFRB Public transportation franchise and regulatory services">
+<div class="icon">🚌</div><div><h3>LTFRB</h3><p>Public transportation franchise and regulatory services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://comelec.gov.ph/" target="_blank" rel="noopener" data-search="COMELEC Voter registration and election information">
+<div class="icon">🗳️</div><div><h3>COMELEC</h3><p>Voter registration and election information</p><span>Open official website →</span></div></a>
+<a class="card" href="https://phlpost.gov.ph/" target="_blank" rel="noopener" data-search="PhilPost Postal services and government mailing services">
+<div class="icon">📮</div><div><h3>PhilPost</h3><p>Postal services and government mailing services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://www.da.gov.ph/" target="_blank" rel="noopener" data-search="Department of Agriculture (DA) Agriculture programs, information and services">
+<div class="icon">🌾</div><div><h3>Department of Agriculture (DA)</h3><p>Agriculture programs, information and services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://dhsud.gov.ph/" target="_blank" rel="noopener" data-search="DHSUD Housing and human settlements services">
+<div class="icon">🏘️</div><div><h3>DHSUD</h3><p>Housing and human settlements services</p><span>Open official website →</span></div></a>
+<a class="card" href="https://www.dswd.gov.ph/" target="_blank" rel="noopener" data-search="DSWD Social protection and assistance programs">
+<div class="icon">👨‍👩‍👧</div><div><h3>DSWD</h3><p>Social protection and assistance programs</p><span>Open official website →</span></div></a></div><div class="notice" id="about"><b>Important:</b> This is an independent directory, not an official Philippine government website. Verify the domain before entering personal, financial or login information.</div></main>
+<footer>© 2026 PH Government Directory · Independent service directory</footer><script>
+const cards=[...document.querySelectorAll('.card')];
+const groups=[None, ['PSA', 'PhilSys', 'DFA Passport'], ['SSS', 'PhilHealth', 'Pag-IBIG'], ['DMW', 'POEA', 'OWWA'], ['BIR', 'DTI', 'SEC'], ['DOLE', 'PRC', 'TESDA'], ['PhilHealth', 'DOH'], ['Police', 'NBI', 'PNP'], ['LTO', 'LTFRB'], ['GOV.PH', 'COMELEC', 'PhilPost', 'DA', 'DHSUD', 'DSWD']];
+function searchCards(){const q=document.getElementById('search').value.toLowerCase();cards.forEach(c=>c.style.display=(!q||c.dataset.search.toLowerCase().includes(q))?'flex':'none')}
+function filterCat(i){cards.forEach(c=>c.style.display=i===0?'flex':groups[i].some(x=>c.dataset.search.toLowerCase().includes(x.toLowerCase()))?'flex':'none');document.getElementById('directory').scrollIntoView({behavior:'smooth'});}
+function showAll(){document.getElementById('search').value='';cards.forEach(c=>c.style.display='flex')}
+</script></body></html>
